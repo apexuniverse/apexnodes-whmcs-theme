@@ -62,7 +62,7 @@
                         <input type="email" name="email" id="inputEmail" class="field form-control" placeholder="{$LANG.orderForm.emailAddress}" value="{$clientemail}">
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 hidden">
                     <div class="form-group prepend-icon">
                         <label for="inputPhone" class="field-icon">
                             <i class="fas fa-phone"></i>
@@ -72,11 +72,11 @@
                 </div>
             </div>
 
-            <div class="sub-heading">
+            <div class="sub-heading hidden">
                 <span>{$LANG.orderForm.billingAddress}</span>
             </div>
 
-            <div class="row">
+            <div class="row hidden">
                 <div class="col-sm-12">
                     <div class="form-group prepend-icon">
                         <label for="inputCompanyName" class="field-icon">
@@ -155,7 +155,7 @@
             </div>
             {if $customfields || $currencies}
             <div class="sub-heading">
-                <span>{$LANG.orderadditionalrequiredinfo}<br><i><small>{lang key='orderForm.requiredField'}</small></i></span>
+                <span>{$LANG.orderadditionalrequiredinfo}</span>
             </div>
             <div class="row">
                 {if $customfields}
